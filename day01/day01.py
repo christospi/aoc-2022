@@ -1,14 +1,13 @@
 import os
 
 ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
-
-input_file = os.path.join(ROOT_DIR, 'day1', 'data', 'input.txt')
+INPUT_FILE = os.path.join(ROOT_DIR, 'day01', 'data', 'input.txt')
 
 def part_one():
   maxi = 0
   curr = 0
 
-  with open(input_file) as file:
+  with open(INPUT_FILE) as file:
     for line in file:
       curr = curr + int(line) if line.strip() else 0
       if curr > maxi:
@@ -20,7 +19,7 @@ def part_two():
   curr = 0
   per_elf = []
 
-  with open(input_file) as file:
+  with open(INPUT_FILE) as file:
     for line in file:
       if line.strip():
         curr += int(line)
