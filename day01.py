@@ -1,7 +1,6 @@
 import os
 
-ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
-INPUT_FILE = os.path.join(ROOT_DIR, 'day01', 'data', 'input.txt')
+INPUT_FILE = os.path.join(os.path.dirname(__file__), 'data', 'day01.txt')
 
 def part_one():
   maxi = 0

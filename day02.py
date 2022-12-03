@@ -1,7 +1,6 @@
 import os
 
-ROOT_DIR = os.path.realpath(os.path.join(os.path.dirname(__file__), '..'))
-INPUT_FILE = os.path.join(ROOT_DIR, 'day02', 'data', 'input.txt')
+INPUT_FILE = os.path.join(os.path.dirname(__file__), 'data', 'day02.txt')
 
 TO_ELVIS = { 'X': 'A', 'Y': 'B', 'Z': 'C'}
 
